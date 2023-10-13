@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(31, 30, 30);
+    overflow: hidden;
+    /* cursor: none; */
+    height: 100vh;
+}
+
+.container {
+    height: 300px;
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    top: 30vh;
+}
+
+input[type="button"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 90px;
+    background: rgb(70, 177, 243);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+input[type="button"] {
+    margin-top: 60px;
+    box-shadow: 1px 1px 6px rgb(70, 177, 243);
+    cursor: none;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: rgb(70, 177, 243);
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    padding-bottom: 30px;
+    display: inline-block;
+    width: auto;
+    color: gray;
+    font-size: 30px;
+}
+
+h1 {
+    padding-bottom: 30px;
+    display: inline-block;
+    width: auto;
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+.lemon {
+    height: 130px;
+    width: 240px;
+    position: absolute;
+    background: rgb(248, 184, 66);
+    border-radius: 10px 10px 130px 130px;
+    top: 5vh;
+    right: 30vw;
+    animation: lemon 10s infinite;
+}
+
+@keyframes lemon {
+    0% {
+        transform: rotate(-30deg) translateY(-30px);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(-30deg) translateY(-30px);
+    }
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid orangered;
+    position: absolute;
+    bottom: 10vh;
+    left: 15vw;
+    animation: triangle 20s infinite;
+}
+
+@keyframes triangle {
+    50% {
+        transform: rotate(80deg);
+    }
+}
+
+.capsule {
+    height: 200px;
+    width: 100px;
+    background: gray;
+    border-radius: 50px;
+    position: absolute;
+    top: 35vh;
+    animation: capsule 20s infinite;
+}
+
+@keyframes capsule {
+    50% {
+        transform: rotate(80deg);
+    }
+}
+
+.square {
+    height: 250px;
+    width: 250px;
+    background: rgb(4, 247, 154);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10vh;
+    right: -10vw;
+    animation: square 40s infinite;
+}
+
+@keyframes square {
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+.circle1 {
+    height: 50px;
+    width: 50px;
+    background: blue;
+    border-radius: 40px;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    opacity: .7;
+    animation: circle 10s infinite;
+}
+
+@keyframes circle {
+    0% {
+        top: 10vh;
+        left: 10vw;
+    }
+
+    50% {
+        top: 15vh;
+        left: 15vw;
+    }
+
+    100% {
+        top: 10vh;
+        left: 10vw;
+    }
+}
+
+.circle1 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background: blue;
+    opacity: .8;
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    left: 10vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10px 10px 10px 10px 10px 10px 10px;
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+}
+
+.grid span {
+    height: 5px;
+    width: 5px;
+    background: orange;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 10px 10px 10px 10px 10px 10px 10px;
+    position: absolute;
+    bottom: 15vh;
+    right: 15vw;
+}
+
+.grid2 span {
+    height: 5px;
+    width: 5px;
+    background: orange;
+    border-radius: 5px;
+    margin: 2px;
+    animation: grid2 10s infinite;
+}
+
+@keyframes grid2 {
+    0% {
+        transform: rotate(-30deg) translateY(-30px);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(-30deg) translateY(-30px);
+    }
+}
