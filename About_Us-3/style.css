@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("./assets/container_background.webp");
+    background-image: url("./Images/container_background.webp");
     background-size: cover;
     width: 90%;
     margin: 0 auto;
