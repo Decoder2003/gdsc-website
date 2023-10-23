@@ -23,7 +23,7 @@ body {
 .shimmering-container {
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(10deg, #d86464 25%, #59d057 50%, #b8ba28 75%, #1ec8db 100%);
+    background: linear-gradient(10deg, #d86464 25%, #59d057 50%, #b8ba28 75%, #2669de 100%);
     background-size: 200% 100%;
     z-index: -2;
     animation: shimmer 6s infinite linear;
