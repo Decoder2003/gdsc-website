@@ -74,7 +74,7 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("https://wallpapercave.com/wp/wp2919022.png");
+    background-image: url("./assets/container_background.webp");
     background-size: cover;
     border-radius: 25px;
     box-shadow: 0 0 10px 0 #888888;

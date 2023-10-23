@@ -23,10 +23,10 @@ body {
 .shimmering-container {
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(90deg, #222 25%, #444 50%, #222 75%);
+    background: linear-gradient(10deg, #d86464 25%, #59d057 50%, #b8ba28 75%, #1ec8db 100%);
     background-size: 200% 100%;
     z-index: -2;
-    animation: shimmer 2s infinite linear;
+    animation: shimmer 6s infinite linear;
 }
 
 @keyframes shimmer {
@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("https://wallpapercave.com/wp/wp2919022.png");
+    background-image: url("./assets/container_background.webp");
     background-size: cover;
     width: 90%;
     margin: 0 auto;
@@ -114,6 +114,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 2.2rem;
+    color: black;
 }
 
 @media (max-width: 768px) {
