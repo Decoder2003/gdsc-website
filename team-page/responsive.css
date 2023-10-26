@@ -1,0 +1,162 @@
+/* ---------------------css for small screen-------------- */
+
+@media only screen and (max-width: 800px ) {
+    /* }<------------------Navigation-bar-Section-------------------> */
+    .sech {
+      font-size: 28px;
+    }
+  
+    .main-nav span a {
+      width: 164px;
+      font-size: 20px;
+      position: relative;
+      left: 25px;
+    }
+  
+    #container h1 {
+      font-size: xx-large;
+    }
+  
+    .forbg {
+      margin-left: 12px;
+      font-size: small;
+      width: 300px;
+      margin-bottom: 250px;
+      text-align: center;
+    }
+  
+    .Hover {
+      position: relative;
+      top: -308px;
+      left: 300px;
+      width: 100vw;
+      font-size: 17px;
+    }
+  
+    .active{
+      color: #ff004f;
+      box-shadow: 0px 0px 20px 0px #ff004f;
+      border-radius: 20px;
+    }
+
+    .footerlinks ul{
+      display: none;
+    }
+   
+    /* <---------------------.hamburger Menu---------------------> */
+  
+    input[type="checkbox"],
+    .hamburger-lines {
+      display: block;
+    }
+  
+    /* Input CheckBox Styling  */
+  
+    input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 30px;
+      top: 20px;
+      right: 20px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    /* Hamburger Styling */
+  
+    .hamburger-lines {
+      display: block;
+      height: 28px;
+      width: 35px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hamburger-lines .lines {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #fff;
+    }
+  
+    .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .hamburger-lines .line2 {
+      transition: transform 0.1s ease-in-out;
+    }
+  
+    .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu-items {
+      position: relative;
+      left: 70%;
+      padding-top: 100px;
+      background: #24252a;
+      height: 195vh;
+      max-width: 382px;
+      transform: translate(200%);
+      display: flex;
+      /* top: -16px; */
+      flex-direction: column;
+      margin-left: -200px;
+      padding-right: 173px;
+      transition: transform 0.5s ease-in-out;
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+  
+    input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+    input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(45deg);
+    }
+  
+    input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  .hamburger-lines:hover {
+    background: #24252a;
+    border-radius: 25px;
+  }
+  
+
+
+  @media only screen and (max-width: 550px ){
+    .Hover {
+      position: relative;
+      top: -308px;
+      left: 100px;
+      width: 100vw;
+      font-size: 17px;
+    }
+
+    .copyright{
+      flex-direction: column;
+      height: 500px;
+      position: relative;
+      bottom: 0;
+    }
+  }
