@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+
+/* "About Us" Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: auto;
+    min-height: 100%;
+    max-width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+#about {
+    text-align: center;
+}
+
+.shimmering-container {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(10deg, #d86464 25%, #59d057 50%, #b8ba28 75%, #5d90e9 100%);
+    background-size: 200% 100%;
+    z-index: -2;
+    animation: shimmer 6s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+#about-heading {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#about-heading>img {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    height: 5rem;
+    width: 6rem;
+}
+
+
+#about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./Images/container_background.webp");
+    background-size: cover;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 #888888;
+    padding: 2rem;
+    opacity: 0.8;
+    margin: 2rem auto;
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+#heading h2 {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#content {
+    width: 50%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+#sections img {
+    border-radius: 25px;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+/* Utility Classes */
+
+.title {
+    font-size: 5.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2.2rem;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    #about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content,
+    #sections img {
+        width: 100%;
+    }
+}

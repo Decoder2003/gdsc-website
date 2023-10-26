@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+
+/* "About Us" Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: auto;
+    min-height: 100%;
+    max-width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+#about {
+    text-align: center;
+}
+
+span {
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#about-heading {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#about-heading>img {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    height: 5rem;
+    width: 6rem;
+}
+
+
+#about-container {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./Images/container_background.webp");
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 #888888;
+    opacity: 0.8;
+}
+
+#heading {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+}
+
+#heading h2 {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#content {
+    width: 50%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+#sections img {
+    border-radius: 25px;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+/* Utility Classes */
+
+.title {
+    font-size: 5.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2.2rem;
+}
+
+@media (max-width: 768px) {
+    #about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content,
+    #sections img {
+        width: 100%;
+    }
+}
